@@ -161,19 +161,19 @@
             {
                  type   : 'Affliliation',
                  labels : ['Affliliation', 'Aff'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
                  type   : 'Function',
                  labels : ['Function', 'Func'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
                  type   : 'Alias',
                  labels : ['Alias', 'Aka'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
@@ -185,13 +185,13 @@
             {
                  type   : 'Attention',
                  labels : ['Attention', 'Attn'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
                  type   : 'CareOf',
                  labels : ['CareOf', 'c/o'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
@@ -203,13 +203,13 @@
             {
                  type   : 'Separator',
                  labels : ['Separator', 'Sep'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             },
             {
                  type   : 'Junk',
                  labels : ['Junk'],
-                 bgColor: '#ff6666',
+                 bgColor: '#ff9999',
                  borderColor: 'darken'
             }
         ]
