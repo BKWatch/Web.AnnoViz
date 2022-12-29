@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Embedded Visualisations - brat rapid annotation tool</title>
+        <link rel="stylesheet" type="text/css" href="/style-vis.css"/>
+        <script type="text/javascript" src="/client/lib/head.load.min.js"></script>
+  </head>
+  <body>
+    <div id="main" class="center">
+      <div id="content">
+          <h1>Sample Address Annotations</h1>
+
+<div id="embedding-entity-example"></div>
+
+
+<!-- override a few style-vis.css settings for the embedded version to make things larger -->
+<style type="text/css">
+text { font-size: 15px; }
+.span text { font-size: 10px; }
+.arcs text { font-size: 9px; }
+</style>
+
+<script type="text/javascript">
+    head.js(
+        // External libraries
+        '/client/lib/jquery.min.js',
+        '/client/lib/jquery.svg.min.js',
+        '/client/lib/jquery.svgdom.min.js',
+
+
+        // brat helper modules
+        '/client/src/configuration.js',
+        '/client/src/util.js',
+        '/client/src/annotation_log.js',
+        '/client/lib/webfont.js',
+        // brat modules
+        '/client/src/dispatcher.js',
+        '/client/src/url_monitor.js',
+        '/client/src/visualizer.js'
+    );
+
+    var webFontURLs = [
+        '/static/fonts/Astloch-Bold.ttf',
+        '/static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        '/static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var collData = {
+        entity_types: [ {
+                type   : 'Person',
+                /* The labels are used when displaying the annotion, in this case
+                    we also provide a short-hand "Per" for cases where
+                    abbreviations are preferable */
+                labels : ['Person', 'Per'],
+                // Blue is a nice colour for a person?
+                bgColor: '#7fa2ff',
+                // Use a slightly darker version of the bgColor for the border
+                borderColor: 'darken'
+        } ]
+    };
+
+    var docData = {
+        // Our text of choice
+        text     : "Ed O'Kellee was the man who shot the man who shot Jesse James.",
+        // The entities entry holds all entity annotations
+        entities : [
+            /* Format: [${ID}, ${TYPE}, [[${START}, ${END}]]]
+                note that range of the offsets are [${START},${END}) */
+            ['T1', 'Person', [[0, 11]]],
+            ['T2', 'Person', [[20, 23]]],
+            ['T3', 'Person', [[37, 40]]],
+            ['T4', 'Person', [[50, 61]]],
+        ],
+    };
+
+    head.ready(function() {
+        // Evaluate the code from the examples and show it to the user
+        //eval($('#embedding-entity-coll').text());
+        //eval($('#embedding-entity-doc').text());
+        /* Make damn sure to copy the objects before handing them to brat
+            since we will modify them later on */
+        Util.embed('embedding-entity-example', $.extend({}, collData),
+                $.extend({}, docData), webFontURLs);
+    });
+</script>
+
+      </div>
+  </body>
+</html>
