@@ -1,22 +1,43 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
-
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Embedded Visualisations - brat rapid annotation tool</title>
-        <link rel="stylesheet" type="text/css" href="/style-vis.css"/>
-        <script type="text/javascript" src="/client/lib/head.load.min.js"></script>
-        <script type="text/javascript" src="/schema/address.js"></script>
+    <title>Sample Address Annotations</title>
+    <link rel="stylesheet" type="text/css" href="/style-vis.css"/>
+    <script type="text/javascript" src="/client/lib/head.load.min.js"></script>
+    <script type="text/javascript" src="/schema/address.js"></script>
+    <style>
+      body { font-family: sans-serif; }
+      svg { border: none; }
+      .sentnum { display: none; }
+      #hello { border: 1px solid black; }
+      #hello td, th { border: 1px solid black; vertical-align: top; }
+      td > div { margin: 1em; border: 2px solid green; }
+    </style>
   </head>
-  <body>
+  <body id="Jack">
     <div id="main" class="center">
       <div id="content">
           <h1>Sample Address Annotations</h1>
 
-<div id="embedding-entity-example"></div>
+<table id="hello" style="width: 100%">
+  <tr><th>Document</th><th>Annotation</th></tr>
+  <tr>
+    <td>005048-347682</td>
+    <td>
+		<div style="border-color: lavender"><span id="embedding-entity-example"/></div>
+        <div><span id="embedding-entity-example2"/></div>
+    </td>
+  </tr>
+  <tr>
+    <td><p>005048-347682</p></td>
+    <td>
+        <div><span id="embedding-entity-example4"/></div>
+    </td>
+  </tr>
+</table>
+
 
 
 <!-- override a few style-vis.css settings for the embedded version to make things larger -->
@@ -41,31 +62,78 @@ text { font-size: 15px; }
     );
 
     var docData = {
-        // Our text of choice
         text     : "Creekside Community Master Association aka Creeksi c/o Robert E. Weiss, Incorporated 920 South Village Oaks Drive Covina, CA 91724",
         entities : [
-            ['T1', 'EntityProper', [[0, 9]]],
-            ['T2', 'EntityDescriptive', [[10, 38]]],
-            ['T3', 'Alias', [[39, 42]]],
-            ['T4', 'EntityProper', [[43, 50]]],
-            ['T5', 'CareOf', [[51, 54]]],
-            ['T7', 'FirstName', [[55, 61]]],
-            ['T8', 'MiddleName', [[62, 64]]],
-            ['T9', 'LastName', [[65, 71]]],
-            ['T10', 'EntityLegal', [[72, 84]]],
-            ['T11', 'Address', [[85, 130]]]
-        ],
+            [1, 'EntityProper', [[0, 9]]],
+            [2, 'EntityDescriptive', [[10, 38]]],
+            [3, 'Alias', [[39, 42]]],
+            [4, 'EntityProper', [[43, 50]]],
+            [5, 'CareOf', [[51, 54]]],
+            [7, 'FirstName', [[55, 61]]],
+            [8, 'MiddleName', [[62, 64]]],
+            [9, 'LastName', [[65, 71]]],
+            [10, 'EntityLegal', [[72, 84]]],
+            [11, 'Address', [[85, 130]]]
+        ]
     };
 
+    var docData2 = {
+        text     : "Creekside Community Master Association aka Creeksi c/o Robert E. Weiss, Incorporated 920 South Village Oaks Drive Covina, CA 91724",
+        entities : [
+            [1, 'EntityProper', [[0, 9]]],
+            [2, 'EntityDescriptive', [[10, 38]]],
+            [3, 'Alias', [[39, 42]]],
+            [4, 'EntityProper', [[43, 50]]],
+            [5, 'CareOf', [[51, 54]]],
+            [7, 'FirstName', [[55, 61]]],
+            [8, 'MiddleName', [[62, 64]]],
+            [9, 'LastName', [[65, 71]]],
+            [10, 'EntityLegal', [[72, 84]]],
+            [11, 'Address', [[85, 130]]]
+        ]
+    };
+
+    var docData3 = {
+        text     : "Creekside Community Master Association aka Creeksi c/o Robert E. Weiss, Incorporated 920 South Village Oaks Drive Covina, CA 91724",
+        entities : [
+            [1, 'EntityProper', [[0, 9]]],
+            [2, 'EntityDescriptive', [[10, 38]]],
+            [3, 'Alias', [[39, 42]]],
+            [4, 'EntityProper', [[43, 50]]],
+            [5, 'CareOf', [[51, 54]]],
+            [7, 'FirstName', [[55, 61]]],
+            [8, 'MiddleName', [[62, 64]]],
+            [9, 'LastName', [[65, 71]]],
+            [10, 'EntityLegal', [[72, 84]]],
+            [11, 'Address', [[85, 130]]]
+        ]
+    };
+
+	function makeTable(container, data) {
+	    var table = $("<table/>").addClass('CSSTableGenerator');
+	    $.each(data, function(rowIndex, r) {
+	        var row = $("<tr/>");
+	        $.each(r, function(colIndex, c) {
+	            row.append($("<t"+(rowIndex == 0 ?  "h" : "d")+"/>").text(c));
+	        });
+	        table.append(row);
+	    });
+	    return container.append(table);
+	}
+
     head.ready(function() {
-        // Evaluate the code from the examples and show it to the user
-        //eval($('#embedding-entity-coll').text());
-        //eval($('#embedding-entity-doc').text());
-        /* Make damn sure to copy the objects before handing them to brat
-            since we will modify them later on */
+        var xxx = "/data/" + window.location.hash.substr(1) + ".js";
+        $.getScript(xxx);
         Util.embed('embedding-entity-example', $.extend({}, collData),
                 $.extend({}, docData), []);
+        Util.embed('embedding-entity-example2', $.extend({}, collData),
+                $.extend({}, docData2), []);
+        Util.embed('embedding-entity-example4', $.extend({}, collData),
+                $.extend({}, docData3), []);
+
     });
+
+
 </script>
 
       </div>
