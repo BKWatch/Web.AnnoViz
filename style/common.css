@@ -3,13 +3,15 @@ body {
   margin: 1em;
 }
 h1 {
-  font-size: 16pt;
-  color: #333;
+  font-size: 18pt;
+  color: #444;
+  text-align: center;
 }
 #date {
-font-size: 11pt;
+font-size: 10pt;
   font-style: italic;
   color: #555;
+  text-align: center;
 }
 #report table {
   width: 100%;
@@ -24,6 +26,13 @@ font-size: 11pt;
 }
 th, td {
   padding: 9px 11px 6px 9px;
+}
+th {
+  color: #555;
+  background-color: #eee;
+}
+td {
+  color: #555;
 }
 .label {
   position: absolute;
@@ -43,7 +52,7 @@ th, td {
   border-color: #009933;
 }
 .reject .label {
-  color: #800000;
+  color: #cc0000;
   background-color: #ffcccc;
   border-color: #ff5050;
 }
