@@ -79,57 +79,9 @@ schema = {
              borderColor: 'darken'
         },
         {
-             type   : 'MeetingName',
-             labels : ['MeetingName', 'MName'],
-             bgColor: '#cc99ff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'MeetingStatus',
-             labels : ['MeetingStatus', 'MStatus'],
-             bgColor: '#b366ff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'MeetingTime',
-             labels : ['MeetingTime', 'MTime'],
-             bgColor: '#cc99ff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'MeetingPlace',
-             labels : ['MeetingPlace', 'MPlace'],
-             bgColor: '#b366ff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'MeetingTelecom',
-             labels : ['MeetingTelecom', 'MTele'],
-             bgColor: '#b366ff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'DeadlineName',
-             labels : ['DeadlineName', 'DName'],
-             bgColor: '#99ddff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'DeadlineTime',
-             labels : ['DeadlineTime', 'DTime'],
-             bgColor: '#33bbff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'DeadlineParty',
-             labels : ['DeadlineParty', 'DParty'],
-             bgColor: '#99ddff',
-             borderColor: 'darken'
-        },
-        {
-             type   : 'DeadlineDocRef',
-             labels : ['DeadlineDocRef', 'DDoc'],
-             bgColor: '#33bbff',
+             type   : 'Address',
+             labels : ['Address', 'Addr'],
+             bgColor: '#ffff00',
              borderColor: 'darken'
         }
     ]
