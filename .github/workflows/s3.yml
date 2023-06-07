@@ -1,9 +1,10 @@
 name: Upload to S3
 
-on:
-  push:
-    branches:
-      - bkw-8766
+on: [push]
+#on:
+#  push:
+#    branches:
+#      - bkw-8766
 
 jobs:
   deploy:
