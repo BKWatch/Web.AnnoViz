@@ -9,7 +9,7 @@ schema = {
         {
              type   : 'FiledBy',
              labels : ['FiledBy', 'Filed'],
-             bgColor: '#ff6699',
+             bgColor: '#fa8cb1',
              borderColor: 'darken'
         },
         {
