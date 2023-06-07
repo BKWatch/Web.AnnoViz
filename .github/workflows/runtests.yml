@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - bkw-8766
+      - main
 
 jobs:
   deploy:
