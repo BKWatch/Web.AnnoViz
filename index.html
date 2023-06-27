@@ -13,19 +13,6 @@
     <div id="date"></div>
     <div id="report"></div>
     <script type="text/javascript">
-      function param(name) // See https://bit.ly/3qHCNIO
-      {
-        var url = window.location.search.substring(1);
-        var params = url.split('&');
-        for (var i = 0; i < params.length; i++) {
-          var parts = params[i].split('=');
-          if (parts[0] == name) {
-            return parts[1];
-          }
-        }
-        return null;
-      }
-
       head.js(
         '/brat/client/lib/jquery.min.js',
         '/brat/client/lib/jquery.svg.min.js',
@@ -39,9 +26,9 @@
         '/brat/client/src/visualizer.js',
         '/lib/core.js'
       );
-      var path = param('path') || window.location.hash.substr(1);
       head.ready(function() {
-        Report.load(path, param('width'), function(report) {
+        var path = param('path') || window.location.hash.substr(1);
+        Report.load(path, function(report) {
           report.display();
         });
       });
