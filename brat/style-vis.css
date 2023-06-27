@@ -35,7 +35,6 @@ text {
   margin-right: auto;
   width: 30em;
   font-size: 12px;
-  font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 .center_wrapper > div > div h1 {
   text-align: center;
@@ -59,7 +58,6 @@ svg.reselect {
 /* "basic" font */
 text {
   font-size: 13px;
-  font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 
 @-webkit-keyframes pulse {
@@ -354,7 +352,7 @@ fieldset legend {
   font-size: 90%;
   /* match jQuery UI .ui-widget-content color */
   color: #2e6e9e;
-}   
+}
 
 .accesskey {
   text-decoration: underline;
@@ -399,7 +397,7 @@ fieldset legend {
 #readme_container {
   position: relative;
 }
-#more_readme_button {                   
+#more_readme_button {
   padding: 2px 5px;
   position: absolute;
   top: -2px;
