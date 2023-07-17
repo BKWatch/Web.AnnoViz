@@ -97,9 +97,21 @@ schema = {
              borderColor: 'darken'
         },
         {
+             type   : 'MeetingTimeFormer',
+             labels : ['MeetingTimeFormer', 'TimeFmr'],
+             bgColor: '#b366ff',
+             borderColor: 'darken'
+        },
+        {
              type   : 'MeetingPlace',
              labels : ['MeetingPlace', 'MPlace'],
              bgColor: '#b366ff',
+             borderColor: 'darken'
+        },
+        {
+             type   : 'MeetingPlaceFormer',
+             labels : ['MeetingPlaceFormer', 'PlcFmr'],
+             bgColor: '#cc99ff',
              borderColor: 'darken'
         },
         {
