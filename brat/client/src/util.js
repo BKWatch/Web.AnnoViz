@@ -2,7 +2,7 @@
 // vim:set ft=javascript ts=2 sw=2 sts=2 cindent:
 var Util = (function(window, undefined) {
 
-    var fontLoadTimeout = 5000; // 5 seconds
+    var fontLoadTimeout = 1; // 1ms
 
     var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
