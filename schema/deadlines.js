@@ -121,6 +121,12 @@ schema = {
              borderColor: 'darken'
         },
         {
+             type   : 'MeetingDocRef',
+             labels : ['MeetingDocRef', 'MDoc'],
+             bgColor: '#cc99ff',
+             borderColor: 'darken'
+        },
+        {
              type   : 'DeadlineName',
              labels : ['DeadlineName', 'DName'],
              bgColor: '#99ddff',
