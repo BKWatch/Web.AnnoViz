@@ -13,7 +13,6 @@
     <div id="report"></div>
     <script src="./dist/bundle.js"></script>
     <script type="module">
-      import { Report } from "./dist/bundle.js";
       $(function() {
         var path = Report.param('path') || window.location.hash.substr(1);
         Report.load(path, function(report) {
