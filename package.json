@@ -1,0 +1,20 @@
+{
+  "name": "brat-viz-site",
+  "version": "1.0.0",
+  "description": "Site for displaying static embedded brat annotations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "James Hibbard",
+  "license": "ISC",
+  "dependencies": {
+    "head": "^0.9.0",
+    "jquery": "^1.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "wbpack-cli": "^4.0.0"
+  }
+}
