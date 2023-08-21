@@ -8,23 +8,23 @@ h1 {
   text-align: center;
 }
 #date {
-font-size: 10pt;
+  font-size: 10pt;
   font-style: italic;
   color: #555;
   text-align: center;
 }
-#report table {
+#content table {
   width: 100%;
   margin-top: 1em;
   border-collapse: collapse;
 }
-#report td:first-child {
+#content td:first-child {
   width: 200px;
 }
-#report table, th, td {
+#content table, th, td {
   border: 1px solid #ddd;
 }
-#report tr:hover {
+#content tr:hover {
   background-color: #ddd;
 }
 th, td {
@@ -70,12 +70,28 @@ td {
 .brat:last-child {
   margin-bottom: 0px;
 }
-.accept svg {
-  /* border-color: green; */
-}
-.reject svg {
-  /* border-color: red; */
-}
+
+/* Hide line numbers */
 .sentnum {
   display: none;
+}
+
+/* Jupyter Notebooks */
+body.jupyter {
+  margin: 0;
+}
+.jupyter #title,
+.jupyter #subtitle,
+.jupyter #date,
+.jupyter th {
+  display: none;
+}
+.jupyter #content table {
+  margin: 0;
+}
+.jupyter #content td:first-child {
+  width: 100px;
+}
+.jupyter td {
+  font-size: small;
 }
