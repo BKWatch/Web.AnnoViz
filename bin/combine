@@ -12,3 +12,7 @@ cat 'brat/client/lib/jquery-1.7.1.min.js' \
     'brat/client/src/visualizer.js' \
     'lib/report.js' \
     > 'lib/combined.js'
+
+cat 'brat/style-vis.css' \
+    'style/report.css' \
+    > 'style/combined.css'

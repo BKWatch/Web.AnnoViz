@@ -2,3 +2,5 @@
 /data
 /node_modules/
 /dist
+/lib/combined.js
+/style/combined.css
