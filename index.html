@@ -13,9 +13,10 @@
     <div id="report"></div>
     <script src="./dist/bundle.js"></script>
     <script type="module">
+      alert(MyLibrary.param);
       $(function() {
-        var path = Report.param('path') || window.location.hash.substr(1);
-        Report.load(path, function(report) {
+        var path = MyLibrary.param('path') || window.location.hash.substr(1);
+        MyLibrary.Report.load(path, function(report) {
           report.display();
         });
       });

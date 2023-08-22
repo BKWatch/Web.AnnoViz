@@ -3,7 +3,6 @@ module.exports = {
   mode: 'development',
   output: {
 	path: `${__dirname}/dist`,
-	filename: 'bundle.js',
-    library: 'report'
+	filename: 'bundle.js'
   },
 };
