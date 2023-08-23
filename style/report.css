@@ -13,18 +13,18 @@ font-size: 10pt;
   color: #555;
   text-align: center;
 }
-#report table {
+#content table {
   width: 100%;
   margin-top: 1em;
   border-collapse: collapse;
 }
-#report td:first-child {
+#content td:first-child {
   width: 200px;
 }
-#report table, th, td {
+#content table, th, td {
   border: 1px solid #ddd;
 }
-#report tr:hover {
+#content tr:hover {
   background-color: #ddd;
 }
 th, td {
