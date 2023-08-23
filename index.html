@@ -8,9 +8,7 @@
     <script src="./lib/combined.js"></script>
     <script type="text/javascript">
         var path = param('path') || window.location.hash.substr(1);
-        Report.load(path, function(report) {
-          report.display();
-        });
+        Report.load(path);
     </script>
   </body>
 </html>
