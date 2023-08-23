@@ -7,8 +7,10 @@
   <body>
     <script src="./lib/combined.js"></script>
     <script type="text/javascript">
-        var path = param('path') || window.location.hash.substr(1);
-        Report.load(path);
+        const path = param('path') || window.location.hash.substr(1);
+        Report.load(path).then(report => {
+            report.display();
+        });
     </script>
   </body>
 </html>
