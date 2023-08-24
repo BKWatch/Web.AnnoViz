@@ -83,6 +83,9 @@ body.jupyter {
 .jupyter #title, #subtitle, #date, th {
   display: none;
 }
+.jupyter #content table {
+  margin: 0;
+}
 .jupyter #content td:first-child {
   width: 100px;
 }
