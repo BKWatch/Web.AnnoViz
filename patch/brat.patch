@@ -1,0 +1,13 @@
+diff --git a/brat/client/src/visualizer.js b/brat/client/src/visualizer.js
+index 7e6cf23..5a73d9e 100644
+--- a/brat/client/src/visualizer.js
++++ b/brat/client/src/visualizer.js
+@@ -318,7 +318,7 @@ var Visualizer = (function($, window, undefined) {
+       var minArcSlant = 8;
+       var arcHorizontalSpacing = 10; // min space boxes with connecting arc
+       var rowSpacing = -5;          // for some funny reason approx. -10 gives "tight" packing.
+-      var sentNumMargin = 31;
++      var sentNumMargin = 11;
+       var smoothArcCurves = true;   // whether to use curves (vs lines) in arcs
+       var smoothArcSteepness = 0.5; // steepness of smooth curves (control point)
+       var reverseArcControlx = 5;   // control point distance for "UFO catchers"
