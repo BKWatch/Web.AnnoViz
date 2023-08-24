@@ -80,7 +80,10 @@ td {
 body.jupyter {
   margin: 0;
 }
-.jupyter #title, #subtitle, #date, th {
+.jupyter #title,
+.jupyter #subtitle,
+.jupyter #date,
+.jupyter th {
   display: none;
 }
 .jupyter #content table {
