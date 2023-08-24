@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Bundle scripts and styles
+        run: bin/combine
+        shell: bash
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --follow-symlinks --delete --exclude '.git/*' --exclude 'data/*' --exclude '.github/*'
