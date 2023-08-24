@@ -1,0 +1,337 @@
+{
+    "entity_types": [
+        {
+            "type": "Address",
+            "labels": [
+                "Address",
+                "Add"
+            ],
+            "bgColor": "#ffff66",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Affiliation",
+            "labels": [
+                "Affiliation",
+                "Afl"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Alias",
+            "labels": [
+                "Alias",
+                "Alias"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "And",
+            "labels": [
+                "And",
+                "And"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Attention",
+            "labels": [
+                "Attention",
+                "Attn"
+            ],
+            "bgColor": "#ffd24d",
+            "borderColor": "darken"
+        },
+        {
+            "type": "CareOf",
+            "labels": [
+                "CareOf",
+                "c/o"
+            ],
+            "bgColor": "#ffd24d",
+            "borderColor": "darken"
+        },
+        {
+            "type": "EntityDescriptive",
+            "labels": [
+                "EntityDescriptive",
+                "EDesc"
+            ],
+            "bgColor": "#ff9933",
+            "borderColor": "darken"
+        },
+        {
+            "type": "EntityGeneric",
+            "labels": [
+                "EntityGeneric",
+                "EGen"
+            ],
+            "bgColor": "#ffb366",
+            "borderColor": "darken"
+        },
+        {
+            "type": "EntityLegal",
+            "labels": [
+                "EntityLegal",
+                "ELeg"
+            ],
+            "bgColor": "#ffbf80",
+            "borderColor": "darken"
+        },
+        {
+            "type": "EntityProper",
+            "labels": [
+                "EntityProper",
+                "EProp"
+            ],
+            "bgColor": "#ff8c1a",
+            "borderColor": "darken"
+        },
+        {
+            "type": "FirstName",
+            "labels": [
+                "FirstName",
+                "First"
+            ],
+            "bgColor": "#99e699",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Function",
+            "labels": [
+                "Function",
+                "Func"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Junk",
+            "labels": [
+                "Junk",
+                "Junk"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "LastName",
+            "labels": [
+                "LastName",
+                "Last"
+            ],
+            "bgColor": "#85e085",
+            "borderColor": "darken"
+        },
+        {
+            "type": "MiddleName",
+            "labels": [
+                "MiddleName",
+                "Mid"
+            ],
+            "bgColor": "#adebad",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Nickname",
+            "labels": [
+                "Nickname",
+                "Nick"
+            ],
+            "bgColor": "#70db70",
+            "borderColor": "darken"
+        },
+        {
+            "type": "PrefixCollective",
+            "labels": [
+                "PrefixCollective",
+                "PColl"
+            ],
+            "bgColor": "#f0c2e0",
+            "borderColor": "darken"
+        },
+        {
+            "type": "PrefixHonorific",
+            "labels": [
+                "PrefixHonorific",
+                "PHon"
+            ],
+            "bgColor": "#ebadd6",
+            "borderColor": "darken"
+        },
+        {
+            "type": "PrefixMarital",
+            "labels": [
+                "PrefixMarital",
+                "PMar"
+            ],
+            "bgColor": "#e699cc",
+            "borderColor": "darken"
+        },
+        {
+            "type": "PrefixOther",
+            "labels": [
+                "PrefixOther",
+                "POth"
+            ],
+            "bgColor": "#e085c2",
+            "borderColor": "darken"
+        },
+        {
+            "type": "PrefixProfessional",
+            "labels": [
+                "PrefixProfessional",
+                "PPro"
+            ],
+            "bgColor": "#db70b8",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Proxy",
+            "labels": [
+                "Proxy",
+                "Prox"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "RoleDescriptive",
+            "labels": [
+                "RoleDescriptive",
+                "RDesc"
+            ],
+            "bgColor": "#809fff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "RoleFunctional",
+            "labels": [
+                "RoleFunctional",
+                "RFunc"
+            ],
+            "bgColor": "#99b3ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "RoleGeneric",
+            "labels": [
+                "RoleGeneric",
+                "RGen"
+            ],
+            "bgColor": "#ccd9ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "RoleLevel",
+            "labels": [
+                "RoleLevel",
+                "RLev"
+            ],
+            "bgColor": "#ccd9ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "RoleProper",
+            "labels": [
+                "RoleProper",
+                "RProp"
+            ],
+            "bgColor": "#668cff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Separator",
+            "labels": [
+                "Separator",
+                "Sep"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "SuffixCollective",
+            "labels": [
+                "SuffixCollective",
+                "SColl"
+            ],
+            "bgColor": "#e6ccff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "SuffixGenerational",
+            "labels": [
+                "SuffixGenerational",
+                "SGen"
+            ],
+            "bgColor": "#d9b3ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "SuffixHonorific",
+            "labels": [
+                "SuffixHonorific",
+                "SHon"
+            ],
+            "bgColor": "#cc99ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "SuffixOther",
+            "labels": [
+                "SuffixOther",
+                "SOth"
+            ],
+            "bgColor": "#bf80ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "SuffixProfessional",
+            "labels": [
+                "SuffixProfessional",
+                "SPro"
+            ],
+            "bgColor": "#b366ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "UnitDescriptive",
+            "labels": [
+                "UnitDescriptive",
+                "UDesc"
+            ],
+            "bgColor": "#ff80b3",
+            "borderColor": "darken"
+        },
+        {
+            "type": "UnitGeneric",
+            "labels": [
+                "UnitGeneric",
+                "UGen"
+            ],
+            "bgColor": "#ff99c2",
+            "borderColor": "darken"
+        },
+        {
+            "type": "UnitGeographic",
+            "labels": [
+                "UnitGeographic",
+                "UGeo"
+            ],
+            "bgColor": "#ffb3d1",
+            "borderColor": "darken"
+        },
+        {
+            "type": "UnitNumeric",
+            "labels": [
+                "UnitNumeric",
+                "UNum"
+            ],
+            "bgColor": "#ffcce0",
+            "borderColor": "darken"
+        }
+    ]
+}

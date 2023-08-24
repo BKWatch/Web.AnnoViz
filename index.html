@@ -2,36 +2,15 @@
 <html lang="en">
   <head>
     <title></title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css" href="/brat/style-vis.css"/>
-    <link rel="stylesheet" type="text/css" href="/style/common.css"/>
-    <script type="text/javascript" src="/brat/client/lib/head.load.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/combined.css"/>
   </head>
   <body>
-    <h1 id="title"></h1>
-    <div id="subtitle"></div>
-    <div id="date"></div>
-    <div id="report"></div>
+    <script src="./lib/combined.js"></script>
     <script type="text/javascript">
-      head.js(
-        '/brat/client/lib/jquery.min.js',
-        '/brat/client/lib/jquery.svg.min.js',
-        '/brat/client/lib/jquery.svgdom.min.js',
-        '/brat/client/src/configuration.js',
-        '/brat/client/src/util.js',
-        '/brat/client/src/annotation_log.js',
-        '/brat/client/lib/webfont.js',
-        '/brat/client/src/dispatcher.js',
-        '/brat/client/src/url_monitor.js',
-        '/brat/client/src/visualizer.js',
-        '/lib/core.js'
-      );
-      head.ready(function() {
-        var path = param('path') || window.location.hash.substr(1);
-        Report.load(path, function(report) {
-          report.display();
+        const path = param('path') || window.location.hash.substr(1);
+        Report.load(path).then(report => {
+            report.display();
         });
-      });
     </script>
   </body>
 </html>

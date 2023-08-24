@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cat 'brat/client/lib/jquery-1.7.1.min.js' \
+    'brat/client/lib/jquery.svg.min.js' \
+    'brat/client/lib/jquery.svgdom.min.js' \
+    'brat/client/src/configuration.js' \
+    'brat/client/src/util.js' \
+    'brat/client/src/annotation_log.js' \
+    'brat/client/lib/webfont.js' \
+    'brat/client/src/dispatcher.js' \
+    'brat/client/src/url_monitor.js' \
+    'brat/client/src/visualizer.js' \
+    'lib/report.js' \
+    > 'lib/combined.js'
+
+cat 'brat/style-vis.css' \
+    'style/report.css' \
+    > 'style/combined.css'
