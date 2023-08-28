@@ -24,9 +24,6 @@ h1 {
 #content table, th, td {
   border: 1px solid #ddd;
 }
-#content tr:hover {
-  background-color: #ddd;
-}
 th, td {
   padding: 9px 11px 6px 9px;
 }
@@ -94,4 +91,13 @@ body.jupyter {
 }
 .jupyter td {
   font-size: small;
+}
+.jupyter .brat svg {
+  border: none;
+}
+
+/* Single document display */
+.single-column #content td:first-child,
+.single-column #content th:first-child {
+  display: none;
 }
