@@ -1,0 +1,148 @@
+{
+    "entity_types": [
+        {
+            "type": "Address",
+            "labels": [
+                "Address",
+                "Add"
+            ],
+            "bgColor": "#ffff66",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Affiliation",
+            "labels": [
+                "Affiliation",
+                "Afl"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Alias",
+            "labels": [
+                "Alias",
+                "Alias"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "And",
+            "labels": [
+                "And",
+                "And"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Attention",
+            "labels": [
+                "Attention",
+                "Attn"
+            ],
+            "bgColor": "#ffd24d",
+            "borderColor": "darken"
+        },
+        {
+            "type": "CareOf",
+            "labels": [
+                "CareOf",
+                "c/o"
+            ],
+            "bgColor": "#ffd24d",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Email",
+            "labels": [
+                "Email",
+                "Eml"
+            ],
+            "bgColor": "#ffe680",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Function",
+            "labels": [
+                "Function",
+                "Fnc"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Household",
+            "labels": [
+                "Household",
+                "House"
+            ],
+            "bgColor": "#dd99ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Organization",
+            "labels": [
+                "Organization",
+                "Org"
+            ],
+            "bgColor": "#ffb366",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Person",
+            "labels": [
+                "Person",
+                "Per"
+            ],
+            "bgColor": "#85e085",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Proxy",
+            "labels": [
+                "Proxy",
+                "Prox"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Role",
+            "labels": [
+                "Role",
+                "Role"
+            ],
+            "bgColor": "#99b3ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Separator",
+            "labels": [
+                "Separator",
+                "Sep"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Unit",
+            "labels": [
+                "Unit",
+                "Unit"
+            ],
+            "bgColor": "#ff99c2",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Url",
+            "labels": [
+                "Url",
+                "Url"
+            ],
+            "bgColor": "#ffe680",
+            "borderColor": "darken"
+        }
+    ]
+}
