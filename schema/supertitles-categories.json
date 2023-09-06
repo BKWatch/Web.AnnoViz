@@ -82,6 +82,15 @@
             "borderColor": "darken"
         },
         {
+            "type": "Junk",
+            "labels": [
+                "Junk",
+                "Junk"
+            ],
+            "bgColor": "#99994d",
+            "borderColor": "darken"
+        },
+        {
             "type": "Organization",
             "labels": [
                 "Organization",
