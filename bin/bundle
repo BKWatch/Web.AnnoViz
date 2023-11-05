@@ -1,0 +1,7 @@
+#!/bin/sh
+
+bin/combine \
+    && mkdir bundle \
+    && cp lib/combined.js style/combined.css bundle \
+    && tar -czvf bundle.tar.gz bundle \
+    && rm -fr bundle

@@ -1,0 +1,19 @@
+name: Bundle Python Resources
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Create tarball
+        run: bin/bundle
+        shell: bash
+      - uses: pyTooling/Actions/releaser@r0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: bundle.tar.gz
