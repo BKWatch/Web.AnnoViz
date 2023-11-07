@@ -1,40 +1,40 @@
-body {
+.ani {
   font-family: Arial, Helvetica, sans-serif;
   margin: 1em;
 }
-h1 {
+.ani h1 {
   font-size: 18pt;
   color: #444;
   text-align: center;
 }
-#date {
+.ani .date {
   font-size: 10pt;
   font-style: italic;
   color: #555;
   text-align: center;
 }
-#content table {
+.ani table {
   width: 100%;
   margin-top: 1em;
   border-collapse: collapse;
 }
-#content td:first-child {
+.ani td:first-child {
   width: 200px;
 }
-#content table, th, td {
+.ani table, th, td {
   border: 1px solid #ddd;
 }
-th, td {
+.ani th, td {
   padding: 9px 11px 6px 9px;
 }
-th {
+.ani th {
   color: #555;
   background-color: #eee;
 }
-td {
+.ani td {
   color: #555;
 }
-.label {
+.ani .label {
   position: absolute;
   top: 4px;
   right: 2px;
@@ -46,64 +46,64 @@ td {
   border-style: solid;
   border-radius: 4px;
 }
-.accept .label {
+.ani .accept .label {
   color: #006600;
   background-color: #ccffcc;
   border-color: #009933;
 }
-.reject .label {
+.ani .reject .label {
   color: #cc0000;
   background-color: #ffcccc;
   border-color: #ff5050;
 }
-.brat svg {
+
+/* Brat customization */
+.ani .brat svg {
   width: 100% !important;
   border-color: #ddd;
 }
-.brat {
+.ani .brat {
   position: relative;
   margin-bottom: 5px;
 }
-.brat:last-child {
+.ani .brat:last-child {
   margin-bottom: 0px;
 }
-
-/* Hide line numbers */
-.sentnum {
+.ani .sentnum {
   display: none;
 }
 
 /* Jupyter Notebooks */
-body.jupyter {
+.ani.jupyter {
   margin: 0;
 }
-.jupyter #title,
-.jupyter #subtitle,
-.jupyter #date,
-.jupyter th {
+.ani.jupyter #title,
+.ani.jupyter #subtitle,
+.ani.jupyter #date,
+.ani.jupyter th {
   display: none;
 }
-.jupyter #content table {
+.ani.jupyter #content table {
   margin: 0;
 }
-.jupyter #content td:first-child {
+.ani.jupyter #content td:first-child {
   width: 100px;
 }
-.jupyter td {
+.ani.jupyter td {
   font-size: small;
 }
-.jupyter .brat svg {
+.ani.jupyter .brat svg {
   border: none;
 }
 
 /* Single document display */
-.single-column #content td:first-child,
-.single-column #content th:first-child {
+.ani.single-column #content td:first-child,
+.ani.single-column #content th:first-child {
   display: none;
 }
 
 /* PDF */
-.pdf #content td:first-child {
+.ani.pdf #content td:first-child {
   width: 90px;
   font-size: 10pt;
 }
