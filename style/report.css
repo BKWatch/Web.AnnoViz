@@ -14,7 +14,6 @@
   text-align: center;
 }
 .ani table {
-  width: 100%;
   margin-top: 1em;
   border-collapse: collapse;
 }
@@ -77,16 +76,16 @@
 .ani.jupyter {
   margin: 0;
 }
-.ani.jupyter #title,
-.ani.jupyter #subtitle,
-.ani.jupyter #date,
+.ani.jupyter .title,
+.ani.jupyter .subtitle,
+.ani.jupyter .date,
 .ani.jupyter th {
   display: none;
 }
-.ani.jupyter #content table {
+.ani.jupyter table {
   margin: 0;
 }
-.ani.jupyter #content td:first-child {
+.ani.jupyter td:first-child {
   width: 100px;
 }
 .ani.jupyter td {
@@ -97,13 +96,33 @@
 }
 
 /* Single document display */
-.ani.single-column #content td:first-child,
-.ani.single-column #content th:first-child {
+.ani.single-column td:first-child,
+.ani.single-column th:first-child {
   display: none;
 }
 
 /* PDF */
-.ani.pdf #content td:first-child {
-  width: 90px;
-  font-size: 10pt;
+.ani h1 {
+  font-size: 12pt;
+}
+.ani .date {
+  font-size: 8pt;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}
+.pdf.ani table {
+	width: 7in;
+}
+.ani.pdf svg {
+  border: none;
+  margin: 0;
+}
+.ani.pdf th, td {
+  font-size: 8.5pt;
+  padding: 3px;
+}
+.ani.pdf td:first-child {
+  width: 80px;
+  font-size: 6pt;
 }
