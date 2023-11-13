@@ -14,6 +14,7 @@
   text-align: center;
 }
 .ani table {
+  width: 100%;
   margin-top: 1em;
   border-collapse: collapse;
 }
@@ -102,17 +103,17 @@
 }
 
 /* PDF */
-.ani h1 {
+.pdf.ani h1 {
   font-size: 12pt;
 }
-.ani .date {
+.pdf.ani .date {
   font-size: 8pt;
   font-style: italic;
   color: #555;
   text-align: center;
 }
 .pdf.ani table {
-	width: 7in;
+  width: 7in;
 }
 .ani.pdf svg {
   border: none;
