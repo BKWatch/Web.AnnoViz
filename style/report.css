@@ -25,6 +25,7 @@
   border: 1px solid #ddd;
 }
 .ani th, td {
+  font-size: 12pt;
   padding: 9px 11px 6px 9px;
 }
 .ani th {
@@ -103,24 +104,24 @@
 }
 
 /* PDF */
-.pdf.ani h1 {
+.ani.pdf h1 {
   font-size: 12pt;
 }
-.pdf.ani .date {
+.ani.pdf .date {
   font-size: 8pt;
   font-style: italic;
   color: #555;
   text-align: center;
 }
-.pdf.ani table {
+.ani.pdf table {
   width: 7in;
 }
 .ani.pdf svg {
   border: none;
   margin: 0;
 }
-.ani.pdf th, td {
-  font-size: 8.5pt;
+.pdf th,
+.pdf td {
   padding: 3px;
 }
 .ani.pdf td:first-child {
