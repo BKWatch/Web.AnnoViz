@@ -20,6 +20,7 @@
 }
 .ani .pagination {
   clear: both;
+  margin-bottom: 4px;
 }
 .ani table {
   width: 100%;
