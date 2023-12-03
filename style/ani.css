@@ -1,17 +1,25 @@
 .ani {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 1em;
 }
 .ani h1 {
+  display: flex;
+  float: left;
   font-size: 18pt;
-  color: #444;
+  color: #595959;
   text-align: center;
+  margin-top: 0;
 }
 .ani .date {
+  display: flex;
+  float: right;
   font-size: 10pt;
   font-style: italic;
-  color: #555;
+  color: #474747;
   text-align: center;
+}
+.ani .pagination {
+  clear: both;
 }
 .ani table {
   width: 100%;

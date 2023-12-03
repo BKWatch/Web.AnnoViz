@@ -9,9 +9,11 @@ cat 'brat/client/lib/jquery-1.7.1.min.js' \
     'brat/client/src/dispatcher.js' \
     'brat/client/src/url_monitor.js' \
     'brat/client/src/visualizer.js' \
-    'lib/report.js' \
+    'lib/pagination-2.6.0.min.js' \
+    'lib/ani.js' \
     > 'lib/combined.js'
 
 cat 'brat/style-vis.css' \
-    'style/report.css' \
+    'style/pagination-2.6.0.css' \
+    'style/ani.css' \
     > 'style/combined.css'
