@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pagination Demo</title>
+    <link rel="stylesheet" type="text/css" href="/style/combined.css"/>
+  </head>
+  <body>
+    <div id="demo">
+    </div>
+    <div id="content"/>
+    <script src="./lib/combined.js"></script>
+    <script type="text/javascript">
+       let data = Array.from({ length: 50 }, (value, index) => index);
+       let demo = document.getElementById("demo");
+	    $(demo).pagination({
+	        dataSource: data,
+	        pageSize: 5,
+            showPageNumbers: true,
+            showSizeChanger: true,
+            pageRange: null,
+	        callback: function(data, pagination) {
+	            $("#content").html("<p>" + data + "</p>");
+	        }
+	    })
+    </script>
+  </body>
+</html>
