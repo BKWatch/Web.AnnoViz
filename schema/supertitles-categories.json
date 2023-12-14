@@ -138,7 +138,6 @@
         {
             "type": "Unit",
             "labels": [
-                "Unit",
                 "Unit"
             ],
             "bgColor": "#ff99c2",
@@ -147,10 +146,36 @@
         {
             "type": "Url",
             "labels": [
-                "Url",
                 "Url"
             ],
             "bgColor": "#ffe680",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Department",
+            "labels": [
+                "Department",
+                "Dept"
+            ],
+            "bgColor": "#dd99ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Location",
+            "labels": [
+                "Location",
+                "Loc"
+            ],
+            "bgColor": "#dd99ff",
+            "borderColor": "darken"
+        },
+        {
+            "type": "Sector",
+            "labels": [
+                "Sector",
+                "Sect"
+            ],
+            "bgColor": "#dd99ff",
             "borderColor": "darken"
         }
     ]
