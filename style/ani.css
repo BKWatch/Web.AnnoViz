@@ -70,7 +70,7 @@
 /* Brat customization */
 .ani .brat svg {
   width: 100% !important;
-  border-color: #ddd;
+  border: none;
 }
 .ani .brat {
   position: relative;
@@ -102,8 +102,8 @@
 .ani.jupyter td {
   font-size: small;
 }
-.ani.jupyter .brat svg {
-  border: none;
+.ani.multidoc .brat svg {
+  border: 1px solid #ddd;
 }
 
 /* Single document display */
@@ -126,7 +126,6 @@
   width: 7in;
 }
 .ani.pdf svg {
-  border: none;
   margin: 0;
 }
 .pdf th,
