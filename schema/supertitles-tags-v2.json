@@ -215,6 +215,15 @@
             ],
             "bgColor": "#99b3ff",
             "borderColor": "darken"
+        },
+        {
+            "type": "Organization",
+            "labels": [
+                "Organization",
+                "Org"
+            ],
+            "bgColor": "#d9d9d9",
+            "borderColor": "darken"
         }
     ]
 }
