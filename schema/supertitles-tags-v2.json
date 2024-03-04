@@ -207,5 +207,14 @@
             "bgColor": "#b366ff",
             "borderColor": "darken"
         },
+        {
+            "type": "Role",
+            "labels": [
+                "Role",
+                "Role"
+            ],
+            "bgColor": "#99b3ff",
+            "borderColor": "darken"
+        }
     ]
 }
